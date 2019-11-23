@@ -52,7 +52,7 @@ class Song
 
     data = row.split(" - ")
     artist_name = data[0]
-    song_name = data[1].gsub(".mp3")
+    song_name = data[1].gsub(".mp3", "")
 
     song = self.new
     song.artist_name = artist_name
