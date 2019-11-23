@@ -52,7 +52,7 @@ class Song
     song = rows.collect do |row|
       name = rows[0]
       song_data = row.split(".")
-      artist_name = song_data[2]
+      artist_name = song_data[1]
       binding.pry
       song = self.new
       song.artist_name = artist_name
