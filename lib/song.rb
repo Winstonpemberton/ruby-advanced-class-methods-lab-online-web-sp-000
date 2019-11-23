@@ -48,17 +48,15 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    rows = filename.split(" - ")
-    song = rows.collect do |row|
-      name = rows[0]
-      song_data = row.split(".")
-      artist_name = song_data[1]
-      binding.pry
-      song = self.new
-      song.artist_name = artist_name
-      song.name = name
-    end
+    row = filename
 
+    data = row.split(" - ")
+    artist_name = data[0]
+    song_name = data[1].gsub(".mp3", "")
+
+    song = self.new
+    song.artist_name = artist_name
+    song.name = name
     song
 
 
