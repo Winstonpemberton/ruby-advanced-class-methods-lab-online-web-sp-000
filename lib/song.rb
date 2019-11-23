@@ -55,8 +55,8 @@ class Song
       name = song_data[0]
     end
 
-    self.artist_name = artist_name
-    self.name = name
+    Song.artist_name = artist_name
+    Song.name = name
 
   end
 
