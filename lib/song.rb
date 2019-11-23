@@ -52,7 +52,7 @@ class Song
     song = rows.collect do |row|
       artist_name = rows[0]
       song_data = row.split(".")
-      song_name = song_data[0]
+      name = song_data[0]
     end
 
   end
