@@ -53,13 +53,13 @@ class Song
       name = rows[0]
       song_data = row.split(".")
       artist_name = song_data[2]
+      binding.pry
       song = self.new
       song.artist_name = artist_name
       song.name = name
     end
 
     song
-    binding.pry
 
 
 
