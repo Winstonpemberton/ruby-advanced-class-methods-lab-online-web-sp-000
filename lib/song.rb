@@ -53,12 +53,13 @@ class Song
       artist_name = rows[0]
       song_data = row.split(".")
       name = song_data[0]
+      song = self.new
+      song.artist_name = artist_name
+      song.name = name
+      song
     end
 
-    song = self.new
-    song.artist_name = artist_name
-    song.name = name
-    song
+
 
 
   end
